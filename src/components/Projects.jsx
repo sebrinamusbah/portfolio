@@ -1,31 +1,36 @@
 import React from "react";
 import "../css/projects.css";
 
+// Project data
 function Projects() {
   const projects = [
     {
       title: "Portfolio Website",
       description: "React + Vite + GitHub Pages deployment",
       tech: ["React", "JavaScript", "CSS"],
-     link: "https://react-frontendproject-drr7tgjod-sebrina-musbah-s-projects.vercel.app",
+      link: "https://react-frontendproject-drr7tgjod-sebrina-musbah-s-projects.vercel.app",
+      image: "../assets/portfolio-screenshot.png",
     },
     {
       title: "Food Order System",
       description: "Full website with admin panel and order management",
       tech: ["HTML", "CSS", "Bootstrap", "PHP", "MySQL"],
       link: "https://YOUR-FOOD-ORDER-LINK",
+      image: "../assets/food-order-screenshot.png",
     },
     {
       title: "Hospital Management System",
       description: "Patient management dashboard",
       tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      link: "#", // No deployment yet
+      link: "#",
+      image: "../assets/hospital-screenshot.png",
     },
     {
       title: "Node.js CRUD API",
       description: "REST API for user management",
       tech: ["Node.js", "Express", "MySQL"],
       link: "https://YOUR-GITHUB-REPOSITORY",
+      image: "../assets/nodejs-api.png",
     },
   ];
 
@@ -43,6 +48,11 @@ function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
 
