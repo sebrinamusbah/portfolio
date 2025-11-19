@@ -44,7 +44,7 @@ function Projects() {
             <a
               key={index}
               className="project-card"
-              href={project.link}
+              href={projects.link}
               target="_blank"
               rel="noopener noreferrer"
             >
